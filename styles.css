@@ -131,17 +131,16 @@ nav {
     transform: translateY(100%);
 }
 
-.nav__Links a {
+.nav__links a {
     font-weight: 600;
     color: var(--white);
     white-space: nowrap;
 }
-
+  
 .nav__links a:hover {
     color: var(--text-dark);
 }
 
 .nav__btns {
     display: none;
-    
 }
