@@ -339,6 +339,43 @@ header::before {
     color: var(--extra-light);
 }
 
+.showcase__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.showcase__image img {
+    max-width: 400px;
+    margin-inline: auto;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+}
+
+.showcase__content h4 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.showcase__content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.showcase__content .btn {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-image: url("assets/header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
 @media(width > 540px) {
     .destination__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -346,6 +383,11 @@ header::before {
 
     .journey__grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 }
 
@@ -453,6 +495,14 @@ header::before {
 
     .journey__grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .showcase__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .showcase__content {
+        grid-column: 2/4;
     }
 
 }
