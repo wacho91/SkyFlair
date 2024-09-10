@@ -342,6 +342,7 @@ header::before {
 .showcase__container {
     display: grid;
     gap: 2rem;
+    overflow: hidden;
 }
 
 .showcase__image img {
