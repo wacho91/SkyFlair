@@ -64,3 +64,8 @@ ScrollReveal().reveal(".showcase__btn", {
     ...scrollRevealOption,
     delay: 1500,
 });
+
+ScrollReveal().reveal(".banner__card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
